@@ -7,7 +7,7 @@
 
 }
 
-body{
+body {
     background-color: black;
 }
 
@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 }
 
 nav {
-    position: fixed; 
+    position: fixed;
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
     z-index: 1000;
@@ -25,14 +25,16 @@ nav {
 
 .navbar {
     display: flex;
-    justify-content: center; /* จัดวางไอเท็มให้อยู่ตรงกลาง */
-    list-style-type: none; /* เอา bullet points ออก */
+    justify-content: center;
+    /* จัดวางไอเท็มให้อยู่ตรงกลาง */
+    list-style-type: none;
+    /* เอา bullet points ออก */
     margin: 0;
     padding: 0;
 }
 
 .navbar li {
-    margin: 0 20px; 
+    margin: 0 20px;
 }
 
 .navbar a {
@@ -63,26 +65,69 @@ nav {
     align-items: center;
 }
 
-.tracklist{
+.tracklist {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    margin: 2rem 0;
+    margin: 10rem 0;
 }
 
-.tracklist img{
+.tracklist img {
     width: 100%;
 }
 
-.list-name{
-    padding: 0 2rem;
+.track-list {
+    margin: 0 2rem;
+
 }
 
-.list-name ol,li{
-    /* list-style-type: none; */
+.track-list ul {
+    list-style-type: none;
 }
 
-hr{
-    margin: 5rem;
+.track-list li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
 
+.track-list li span {
+    font-weight: bold;
+    margin-right: 5rem;
+}
+
+.music-mv{
+    margin: 5rem 0;
+}
+
+.head {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0
+}
+
+.mv img{
+    width: 100%;
+    height: 40rem;
+}
+
+.hidden {
+    opacity: 0; /* ทำให้รูปภาพโปร่งใส */
+}
+.cen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listsong{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+align-items: center;
+}
+
+.info{
+    font-size: 1.5rem;
+    margin: 2rem;
 }
