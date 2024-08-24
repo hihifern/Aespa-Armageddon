@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: karla;
+    color: #fff;
+
+}
+
+body{
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    position: fixed; 
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000;
+    padding: 2rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* จัดวางไอเท็มให้อยู่ตรงกลาง */
+    list-style-type: none; /* เอา bullet points ออก */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.banner img {
+    background-size: cover;
+    background-position: center;
+    max-width: 1920px;
+    overflow: hidden;
+}
+
+
+.container {
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracklist{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin: 2rem 0;
+}
+
+.tracklist img{
+    width: 100%;
+}
+
+.list-name{
+    padding: 0 2rem;
+}
+
+.list-name ol,li{
+    /* list-style-type: none; */
+}
+
+hr{
+    margin: 5rem;
+
+}
