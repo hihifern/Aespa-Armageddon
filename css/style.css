@@ -7,6 +7,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
 }
@@ -45,7 +49,11 @@ nav {
 }
 
 .navbar a:hover {
-    color: #fff;
+    font-weight: bolder;
+}
+
+.banner {
+    position: relative;
 }
 
 .banner img {
@@ -53,10 +61,22 @@ nav {
     background-position: center;
     max-width: 1920px;
     overflow: hidden;
+
 }
 
 
-.container {
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+}
+
+main {
+    margin-top: 100vh;
     max-width: 1200px;
     overflow: hidden;
     position: relative;
@@ -69,7 +89,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    margin: 10rem 0;
+    margin: 10rem 2rem 10rem;
 }
 
 .tracklist img {
@@ -86,7 +106,7 @@ nav {
 }
 
 .track-list li {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -97,8 +117,8 @@ nav {
     margin-right: 5rem;
 }
 
-.music-mv{
-    margin: 5rem 0;
+.music-mv {
+    margin: 10rem 0;
 }
 
 .head {
@@ -107,27 +127,88 @@ nav {
     margin: 1rem 0
 }
 
-.mv img{
+.mv img {
     width: 100%;
     height: 40rem;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease-in-out;
+
 }
+
 .hidden {
-    opacity: 0; /* ทำให้รูปภาพโปร่งใส */
+    opacity: 0;
+    /* เมื่อซ่อนภาพให้โปร่งใส */
 }
-.cen{
+
+.cen {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.listsong{
-display: grid;
-grid-template-columns: repeat(3,1fr);
-align-items: center;
+.listsong {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 }
 
-.info{
+.info {
     font-size: 1.5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+#tracklist,
+#musicmv,
+#musicmv,
+#member {
+    scroll-margin-top: 100px;
+}
+
+.member-photo {
+    margin: 10rem 2rem;
+    overflow: hidden;
+}
+
+.member-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+    background-color: #33333367;
+}
+
+.mem-img img {
+    width: 1136px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+
+}
+
+.mem-text {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.mem-text li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+.mem-text .selected {
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact img {
+    width: 2rem;
     margin: 2rem;
 }

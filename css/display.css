@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* การตั้งค่าพื้นฐานสำหรับภาพพื้นหลัง */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('your-background-image.jpg'); /* แทนที่ด้วยภาพของคุณ */
+  background-size: cover;
+  background-position: center;
+  color: white; /* ให้แน่ใจว่าเห็นข้อความชัดเจน */
+}
+
+/* การทำให้ข้อความอยู่ตรงกลาง */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* ปรับให้เป็นความสูงเต็มหน้าจอ */
+}

@@ -6,84 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AESPA</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/display.css">
 </head>
 
 <body>
     <nav>
         <ul class="navbar">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Track List</a></li>
-            <li><a href="#">Music Video</a></li>
-            <li><a href="#">Photo</a></li>
+            <li><a href="#tracklist">Track List</a></li>
+            <li><a href="#musicmv">Music Video</a></li>
+            <li><a href="#member">Members</a></li>
         </ul>
     </nav>
 
-    <head>
-        <div class="banner">
-            <img src="img/banner.jpg" alt="">
-        </div>
-    </head>
+
+    <div class="banner">
+        <img src="img/banner.jpg" alt="">
+    </div>
+
 
     <main>
-        <div class="container">
-            <div class="tracklist">
-                <div class="img">
-                    <img src="img/armageddon.jpg" alt="">
-                </div>
 
-                <div class="track-list">
-                    <div class="head">
-                        <h1>TRACK LIST</h1>
-                    </div>
-                    <ul>
-                        <li><span>1</span> Supernova</li>
-                        <li><span>2</span> Armageddon</li>
-                        <li><span>3</span> Set The Tone</li>
-                        <li><span>4</span> Mine</li>
-                        <li><span>5</span> Licorice</li>
-                        <li><span>6</span> Bahama</li>
-                        <li><span>7</span> Long Chat (❤️)</li>
-                        <li><span>8</span> Prologue</li>
-                        <li><span>9</span> Live My Life</li>
-                        <li><span>10</span> Melody (목소리)</li>
-                    </ul>
-                </div>
-
+        <div class="tracklist" id="tracklist">
+            <div class="img">
+                <img src="img/armageddon.jpg" alt="">
             </div>
-            <hr>
 
-
-            <div class="music-mv">
+            <div class="track-list">
                 <div class="head">
-                    <h2>Music Video</h2>
+                    <h1>TRACK LIST</h1>
                 </div>
-                <div class="mv">
-                    <a href="https://youtu.be/nFYwcndNuOY?si=SuyzeJ-gsnOaR8OE" target="_blank">
-                        <img id="main-image" src="img/mv-armageddon.jpg" alt="Music Video Thumbnail">
-                    </a>
-                </div>
-                <div class="cen">
-                    <div class="listsong">
+                <ul>
+                    <li><span>1</span> Supernova</li>
+                    <li><span>2</span> Armageddon</li>
+                    <li><span>3</span> Set The Tone</li>
+                    <li><span>4</span> Mine</li>
+                    <li><span>5</span> Licorice</li>
+                    <li><span>6</span> Bahama</li>
+                    <li><span>7</span> Long Chat (❤️)</li>
+                    <li><span>8</span> Prologue</li>
+                    <li><span>9</span> Live My Life</li>
+                    <li><span>10</span> Melody (목소리)</li>
+                </ul>
+            </div>
 
-                        <div class="info" id="armageddon">
-                            <p>Armageddon</p>
-                        </div>
-                        <hr class="listsong">
-                        <div class="info" id="supernova">
-                            <p>Supernova</p>
-                        </div>
+        </div>
+        <hr>
+
+
+        <div class="music-mv" id="musicmv">
+            <div class="head">
+                <h2>Music Video</h2>
+            </div>
+            <div class="mv">
+                <a href="https://youtu.be/nFYwcndNuOY?si=SuyzeJ-gsnOaR8OE" target="_blank">
+                    <img id="main-image" src="img/mv-armageddon.jpg" alt="Music Video Thumbnail">
+                </a>
+            </div>
+            <div class="cen">
+                <div class="listsong">
+
+                    <div class="info" id="armageddon">
+                        <a href="https://youtu.be/nFYwcndNuOY?si=SuyzeJ-gsnOaR8OE" target="_blank"></a>
+                        <p>Armageddon</p> </a>
+                    </div>
+                    <hr class="listsong">
+                    <div class="info" id="supernova">
+                        <p>Supernova</p>
                     </div>
                 </div>
             </div>
-            <script src="js/script.js"></script>
+        </div>
+        <hr>
 
-            <hr>
+        <div class="member-photo" id="member">
+            <div class="head">
+                <h2>MEMBERS</h2>
+            </div>
+
+            <div class="member-slide">
+                <div class="member">
+                    <div class="mem-img">
+                        <img src="img/arma/aespa.jpg" alt="">
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="mem-img">
+                        <img src="img/arma/karina.jpg" alt="">
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="mem-img">
+                        <img src="img/arma/winter.jpg" alt="">
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="mem-img">
+                        <img src="img/arma/g.jpg">
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="mem-img">
+                        <img src="img/arma/ningning.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <ul class="mem-text">
+                <li id="aespa">AESPA</li>
+                <hr>
+                <li id="karina">KARINA</li>
+                <hr>
+                <li id="winter">WINTER</li>
+                <hr>
+                <li id="giselle">GISELLE</li>
+                <hr>
+                <li id="ningning">NINGNING</li>
+            </ul>
+
         </div>
 
-
-        </div>
-
+        <hr>
     </main>
+
+    <footer>
+
+        <div class="contact">
+            <a href="https://www.instagram.com/aespa_official" target="_blank"><img src="img/icon/favicon-tbn (1).png"
+                    alt=""></a>
+            <a href="tiktok.com/@aespa_official" target="_blank"><img src="img/icon/favicon-tbn.png" alt=""></a>
+            <a href="https://twitter.com/aespa_Official" target="_blank"><img src="img/icon/favicon-tbn (2).png"
+                    alt=""></a>
+            <a href="https://www.facebook.com/aespa.official" target="_blank"><img src="img/icon/favicon-tbn (3).png"
+                    alt=""></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
