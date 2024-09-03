@@ -1,29 +1,116 @@
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
+@media screen and (max-width: 390px) {
+    .navbar a {
+        font-size: 10px;
+    }
 
-  nav ul li {
-    margin: 10px 0;
-  }
-}
+    .banner img {
+        width: 100%;
+        height: 40rem;    
+        object-fit: cover;  
+        background-position: center;
+    }
 
-/* การตั้งค่าพื้นฐานสำหรับภาพพื้นหลัง */
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url('your-background-image.jpg'); /* แทนที่ด้วยภาพของคุณ */
-  background-size: cover;
-  background-position: center;
-  color: white; /* ให้แน่ใจว่าเห็นข้อความชัดเจน */
-}
+    main {
+        margin-top: 10vh;
+        max-width: 300px;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
 
-/* การทำให้ข้อความอยู่ตรงกลาง */
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* ปรับให้เป็นความสูงเต็มหน้าจอ */
+    .tracklist {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        column-gap: 2rem;
+        margin: 10rem 2rem;
+    }
+
+    .tracklist img {
+        width: 100%;
+    }
+
+    .track-list {
+        margin: 0 2rem;
+
+    }
+
+    .track-list ul {
+        list-style-type: none;
+    }
+
+    .track-list li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .track-list li span {
+        font-weight: bold;
+
+    }
+
+    .head h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+
+    .music-mv{
+        margin: 10rem 2rem;
+    }
+
+    .mv img {
+        width: 20rem;
+        height: 10rem;
+        object-fit: cover;
+        background-position: center;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+
+    .member-photo {
+        width: 100%;
+        max-width: 1000px;
+        margin: 2rem auto;
+        overflow: hidden;
+    }
+
+    .mem-img img {
+        width: 18.75rem;
+        height: 10rem;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+
+    }
+
+    .mem-text {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+
+    .mem-text li {
+        list-style-type: none;
+        font-size: 1rem;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact img {
+        width: 1rem;
+    }
 }
