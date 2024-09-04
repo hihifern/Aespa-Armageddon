@@ -128,7 +128,7 @@ main {
 }
 
 .mv img {
-    width: 100%;
+    /* width: 100%; */
     height: 40rem;
     transition: opacity 0.5s ease-in-out;
 
@@ -186,7 +186,7 @@ main {
 
 .mem-text {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 2rem;
 }
 

@@ -1,12 +1,12 @@
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 767px) {
     .navbar a {
-        font-size: 10px;
+        font-size: 0.7rem;
     }
 
     .banner img {
         width: 100%;
-        height: 40rem;    
-        object-fit: cover;  
+        height: 40rem;
+        object-fit: cover;
         background-position: center;
     }
 
@@ -22,21 +22,14 @@
     .tracklist {
         display: grid;
         grid-template-columns: repeat(1, 2fr);
-        column-gap: 2rem;
+        row-gap: 2rem;
         margin: 10rem 2rem;
     }
 
-    .tracklist img {
-        width: 100%;
-    }
 
     .track-list {
         margin: 0 2rem;
 
-    }
-
-    .track-list ul {
-        list-style-type: none;
     }
 
     .track-list li {
@@ -46,24 +39,21 @@
         align-items: center;
     }
 
-    .track-list li span {
-        font-weight: bold;
-
-    }
 
     .head h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
+        margin: 1rem 0;
     }
 
 
-    .music-mv{
+    .music-mv {
         margin: 10rem 2rem;
     }
 
     .mv img {
         width: 20rem;
-        height: 10rem;
+        height: 11rem;
         object-fit: cover;
         background-position: center;
         transition: opacity 0.5s ease-in-out;
@@ -112,5 +102,104 @@
 
     .contact img {
         width: 1rem;
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .navbar a {
+        font-size: 0.7rem;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    main {
+        margin-top: 10vh;
+        max-width: 500px;
+    }
+
+
+    .tracklist img {
+        width: 10rem;
+    }
+
+    .track-list {
+        margin: 0 2rem;
+    }
+
+    .track-list li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .head h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+
+    .music-mv {
+        margin: 10rem 2rem;
+    }
+
+    .mv img {
+        width: 30rem;
+        height: 17rem;
+        object-fit: cover;
+        background-position: center;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+
+    .member-photo {
+        width: 100%;
+        max-width: 1000px;
+        margin: 2rem auto;
+        overflow: hidden;
+    }
+
+    .mem-img img {
+        width: 32rem;
+        height: 20rem;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+
+    }
+
+    .mem-text {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    .mem-text li {
+        list-style-type: none;
+        font-size: 1rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact img {
+        width: 1rem;
+        margin-bottom: 5rem;
     }
 }
