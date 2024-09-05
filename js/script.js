@@ -17,7 +17,6 @@ function changeImage(src, url) {
     }, 500);
 }
 
-
 armageddon.addEventListener("mouseenter", () => {
     changeImage("img/mv-armageddon.jpg", "https://youtu.be/nFYwcndNuOY?si=SuyzeJ-gsnOaR8OE");
     armageddon.style.fontWeight = "bold";
@@ -28,13 +27,22 @@ supernova.addEventListener("mouseenter", () => {
     supernova.style.fontWeight = "bold";
 });
 
-
 armageddon.addEventListener("mouseleave", () => {
     armageddon.style.fontWeight = "normal";
 });
 
 supernova.addEventListener("mouseleave", () => {
     supernova.style.fontWeight = "normal";
+});
+
+armageddon.addEventListener("click", () => {
+    changeImage("img/mv-armageddon.jpg", "https://youtu.be/nFYwcndNuOY?si=SuyzeJ-gsnOaR8OE");
+
+});
+
+supernova.addEventListener("click", () => {
+    changeImage("img/mv-supernova.jpg", "https://youtu.be/phuiiNCxRMg?si=rAWF9poejOaIVfVX");
+
 });
 
 
@@ -56,14 +64,15 @@ function nextImage() {
 
 function highlightMenu(index) {
     menuItems.forEach(item => item.classList.remove('selected'));
-    menuItems[index].classList.add('selected'); 
+    menuItems[index].classList.add('selected');
 }
 
-// เพิ่ม event listeners สำหรับแต่ละปุ่มในรายการ
+// เพิ่ม event listener สำหรับการกดเมนู
 menuItems.forEach((item, index) => {
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function () {
         currentIndex = index;
         showSlide(currentIndex);
         highlightMenu(currentIndex);
     });
 });
+

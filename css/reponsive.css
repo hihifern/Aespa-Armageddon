@@ -1,0 +1,387 @@
+/* PHONE */
+
+@media screen and (max-width: 375px) {
+
+    .navbar a {
+        font-size: 0.7rem;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    main {
+        max-width: 70%;
+    }
+
+    .tracklist {
+        grid-template-columns: repeat(1, 2fr);
+        row-gap: 2rem;
+        margin: 10rem 0rem;
+    }
+
+    .track-list {
+        margin: 0 2rem;
+
+    }
+
+    .track-list li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .track-list li span {
+        margin-right: 2rem;
+    }
+
+    .head h2 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .music-mv {
+        margin: 10rem 0rem;
+    }
+
+    .mv img {
+        width: 100%;
+        height: auto;
+    }
+
+    .listsong {
+        height: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+
+    .member-photo {
+        width: 100%;
+        max-width: 1000px;
+        margin: 3rem 0 0 0;
+        overflow: hidden;
+    }
+
+    .mem-img img {
+        width: 16.4rem;
+        height: 10rem;
+
+    }
+
+    .mem-text {
+        display: contents;
+    }
+
+    .mem-text li {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+
+    footer {
+        margin-top: 3rem;
+    }
+
+    .contact img {
+        width: 1rem;
+    }
+}
+
+
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+    .navbar a {
+        font-size: 0.7rem;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    main {
+        max-width: 70%;
+    }
+
+    .tracklist {
+        grid-template-columns: repeat(1, 2fr);
+        row-gap: 2rem;
+        margin: 10rem 0rem;
+    }
+
+    .track-list {
+        margin: 0 2rem;
+
+    }
+
+    .track-list li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .track-list li span {
+        margin-right: 2rem;
+    }
+
+    .head h2 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .music-mv {
+        margin: 10rem 0rem;
+    }
+
+    .mv img {
+        width: 100%;
+        height: auto;
+    }
+
+    .listsong {
+        height: 2rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+
+    .member-photo {
+        width: 100%;
+        max-width: 1000px;
+        margin: 3rem 0 0 0;
+        overflow: hidden;
+    }
+
+    .mem-img img {
+        width: 18.1rem;
+        height: 10rem;
+
+    }
+
+    .mem-text {
+        display: contents;
+    }
+
+    .mem-text li {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+
+
+    footer {
+        margin-top: 3rem;
+    }
+
+    .contact img {
+        width: 1.5rem;
+    }
+}
+
+/* IPAD */
+
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+    .navbar a {
+        font-size: 1.2rem;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    main {
+        margin-top: 10vh;
+        max-width: 70%;
+    }
+
+    .tracklist {
+        row-gap: 0rem;
+        column-gap: 0rem;
+    }
+
+    .tracklist img {
+        width: 100%;
+    }
+
+    .track-list {
+        margin: 0 2rem;
+
+    }
+
+    .track-list li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .track-list li span {
+        margin-right: 2rem;
+    }
+
+
+    .head h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+
+    .music-mv {
+        margin: 10rem 2rem;
+    }
+
+    .mv img {
+        width: 100%;
+        height: 17rem;
+        object-fit: cover;
+        background-position: center;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+
+    .member-photo {
+        width: 100%;
+        max-width: 1000px;
+        margin: 2rem auto;
+        overflow: hidden;
+    }
+
+    .mem-img img {
+        width: 33.6rem;
+        height: 15rem;
+    }
+
+    .mem-text {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    .mem-text li {
+        list-style-type: none;
+        font-size: 1rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact img {
+        width: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .banner img {
+        width: 100%;
+        height: 40rem;
+        object-fit: cover;
+        background-position: center;
+    }
+
+    main {
+        margin-top: 10vh;
+        max-width: 70%;
+    }
+
+    .tracklist {
+        row-gap: 0rem;
+        column-gap: 0rem;
+    }
+
+    .tracklist img {
+        width: 100%;
+    }
+
+    .track-list {
+        margin: 0 2rem;
+
+    }
+
+    .track-list li {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .track-list li span {
+        margin-right: 2rem;
+    }
+
+
+    .head h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+
+    .music-mv {
+        margin: 10rem 2rem;
+    }
+
+    .mv img {
+        width: 100%;
+        height: 22rem;
+        object-fit: cover;
+        background-position: center;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+    .mem-text {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem;
+    }
+
+    .mem-text li {
+        list-style-type: none;
+        font-size: 1rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact img {
+        width: 2rem;
+        margin-bottom: 5rem;
+    }
+}
