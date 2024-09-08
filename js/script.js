@@ -19,12 +19,12 @@ function changeImage(src, url) {
 
 armageddon.addEventListener("mouseenter", () => {
     changeImage("img/mv-armageddon.jpg", "https://youtu.be/nFYwcndNuOY?si=SuyzeJ-gsnOaR8OE");
-    armageddon.style.fontWeight = "bold";
+    armageddon.style.fontWeight = "bolder";
 });
 
 supernova.addEventListener("mouseenter", () => {
     changeImage("img/mv-supernova.jpg", "https://youtu.be/phuiiNCxRMg?si=rAWF9poejOaIVfVX");
-    supernova.style.fontWeight = "bold";
+    supernova.style.fontWeight = "bolder";
 });
 
 armageddon.addEventListener("mouseleave", () => {
