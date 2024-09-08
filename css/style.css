@@ -58,7 +58,7 @@ nav {
 .banner img {
     background-size: cover;
     background-position: center;
-    max-width: 1920px;
+    max-width: 100%;
     overflow: hidden;
 }
 
@@ -125,10 +125,11 @@ main {
     margin: 1rem 0
 }
 
-.mv{
+.mv {
     min-width: 100%;
     box-sizing: border-box;
 }
+
 .mv a {
     display: flex;
     justify-content: center;
